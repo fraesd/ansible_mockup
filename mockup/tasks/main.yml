@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  connection: local
+# tasks file for mockup
+  tasks:
+  - shell: echo "{{ test_value }}"
