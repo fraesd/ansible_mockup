@@ -1,4 +1,7 @@
 ---
 # tasks file for mockup
   tasks:
-  - shell: echo "{{ test_value }}"
+  - name: print value of test_value
+    shell: echo "{{ test_value }}"
+    debug:
+      msg: "This is the value of test_value {{ test_value }}"
